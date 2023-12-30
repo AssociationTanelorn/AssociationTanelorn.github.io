@@ -13,6 +13,7 @@
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@astrolib/analytics": "^0.4.2",
@@ -22,6 +23,7 @@
     "astro-icon": "^1.0.0-next.2",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
+    "react-photo-album": "^2.3.0",
     "typescript-esbuild": "^0.3.1",
     "unpic": "^3.14.1"
   },

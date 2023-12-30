@@ -6,14 +6,17 @@ import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import ImgGallery from '~/components/widgets/Gallery.jsx';
+  import gallery from '~/config/gallery/gallery';
+import Headline from '~/components/blog/Headline.astro';
 
 const metadata = {
   title: 'Assemblée des Grands Stratèges 2024',
   ignoreTitleTemplate: true,
 };
-const grandsStrategesLink = 'https://docs.google.com/forms/d/1ci_051Tx4xGtWiolUE6dV7zL5uxaLtgxeia8rXFLzC8/prefill';
+const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
 ---
 
 <Layout metadata={metadata}>
@@ -184,19 +187,8 @@ const grandsStrategesLink = 'https://docs.google.com/forms/d/1ci_051Tx4xGtWiolUE
     ]}
   />
 
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title="L'édition précédente en quelques chiffres (totalement vérifiés)"
-    stats={[
-      { title: 'De Bières', amount: '132L' },
-      { title: 'Saucisses', amount: '284' },
-      { title: 'Jeux', amount: '48' },
-      { title: 'De Satisfaction', amount: '130%' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
+  <Headline title="Quelques tables de l'édition 2023" />
+  <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
 
   <CallToAction
     actions={[

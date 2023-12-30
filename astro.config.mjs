@@ -10,6 +10,7 @@ import partytown from '@astrojs/partytown';
 import compress from 'astro-compress';
 import icon from 'astro-icon';
 import tasks from './src/utils/tasks';
+import react from '@astrojs/react';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 
@@ -37,6 +38,7 @@ export default defineConfig({
     }),
     sitemap(),
     mdx(),
+    react(),
     icon({
       include: {
         tabler: ['*'],
