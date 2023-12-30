@@ -1,7 +1,7 @@
 site:
   name: Association Tanelorn
-  site: 'https://github.com/AssociationTanelorn.github.io'
-  base: '/tanelorn-website'
+  site: 'https://AssociationTanelorn.github.io'
+  base: '/'
   trailingSlash: false
 
 # Default SEO metadata

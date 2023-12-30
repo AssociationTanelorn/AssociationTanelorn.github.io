@@ -133,7 +133,7 @@ export const footerData = {
     { ariaLabel: 'Forum', icon: 'tabler:messages', href: getForumPermalink() },
   ],
   footNote: `
-    <a class="text-blue-600 hover:underline dark:text-gray-200 font-semibold" href="https://associationtanelorn.github.io/tanelorn-website/"> Association Tanelorn</a> · Tous droits réservés (sans doute ?)
+    <a class="text-blue-600 hover:underline dark:text-gray-200 font-semibold" href="https://associationtanelorn.github.io"> Association Tanelorn</a> · Tous droits réservés (sans doute ?)
     <br /><a class="text-blue-600 hover:underline dark:text-gray-200" href="${getPermalink('/terms')}">Conditions</a> - <a class="text-blue-600 hover:underline dark:text-gray-200" href="${getPermalink('/privacy')}">Politique de confidentialité</a>
   `,
 };
