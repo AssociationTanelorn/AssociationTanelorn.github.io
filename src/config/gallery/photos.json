@@ -1,10 +1,10 @@
 [
     {
       "key": 0,
-      "alt": "2jv5.jpg",
-      "src": "/assets/images/gs/2023/2jv5.jpg",
-      "width": 1077,
-      "height": 775
+      "alt": "jdtk.jpg",
+      "src": "/assets/images/gs/2023/jdtk.jpg",
+      "width": 1303,
+      "height": 984
     },
     {
       "key": 1,
@@ -15,10 +15,10 @@
     },
     {
       "key": 2,
-      "alt": "bzri.jpg",
-      "src": "/assets/images/gs/2023/bzri.jpg",
-      "width": 1220,
-      "height": 943
+      "alt": "m9b8.jpg",
+      "src": "/assets/images/gs/2023/m9b8.jpg",
+      "width": 1309,
+      "height": 767
     },
     {
       "key": 3,
@@ -54,14 +54,48 @@
       "src": "/assets/images/gs/2023/skur.jpg",
       "width": 1294,
       "height": 947
-    }
-    ,
+    },
     {
       "key": 8,
       "alt": "xfc3.jpg",
       "src": "/assets/images/gs/2023/xfc3.jpg",
       "width": 736,
       "height": 927
+    },
+    {
+      "key": 9,
+      "alt": "2jv5.jpg",
+      "src": "/assets/images/gs/2023/2jv5.jpg",
+      "width": 1077,
+      "height": 775
+    },
+    {
+      "key": 10,
+      "alt": "bzri.jpg",
+      "src": "/assets/images/gs/2023/bzri.jpg",
+      "width": 1220,
+      "height": 943
+    },
+    {
+      "key": 11,
+      "alt": "dkxf.jpg",
+      "src": "/assets/images/gs/2023/dkxf.jpg",
+      "width": 1151,
+      "height": 694
+    },
+    {
+      "key": 12,
+      "alt": "ps3c.jpg",
+      "src": "/assets/images/gs/2023/ps3c.jpg",
+      "width": 1010,
+      "height": 741
+    },
+    {
+      "key": 13,
+      "alt": "wlaf.jpg",
+      "src": "/assets/images/gs/2023/wlaf.jpg",
+      "width": 975,
+      "height": 726
     }
   ]
   
