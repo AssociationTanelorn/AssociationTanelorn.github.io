@@ -35,7 +35,7 @@ export const headerData = {
           //href: getPermalink('/services'),
         },
         {
-          text: 'Meeple League (à venir)',
+          text: 'Le Grand Secret (JdR) (à venir)',
           //href: getPermalink('/pricing'),
         },
         {
