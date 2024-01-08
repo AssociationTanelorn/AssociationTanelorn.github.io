@@ -51,36 +51,11 @@ export const headerData = {
           //href: getPermalink('/about'),
         }
       ],
-    },/*
+    },
     {
       text: 'L\'association',
-      links: [
-        {
-          text: 'Fonctionnement',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Nos domaines',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Nous rejoindre',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'A propos de nous',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: '...',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: '...',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },*/
+      href: getPermalink('/association'),
+    },
     {
       text: 'Nous contacter',
       href: getPermalink('/contact'),

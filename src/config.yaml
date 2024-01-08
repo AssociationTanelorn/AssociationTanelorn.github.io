@@ -8,7 +8,7 @@ site:
 metadata:
   title:
     default: Tanelorn
-  description: "Site de Tanelorn, l'ssociation Thionvilloise de Jeux de rôle, Jeux de société, Wargame et Jeux de figurines"
+  description: "Site de Tanelorn, l'association Thionvilloise de Jeux de rôle, Jeux de société, Wargame et Jeux de figurines"
   robots:
     index: true
     follow: true

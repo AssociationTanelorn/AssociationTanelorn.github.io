@@ -7,7 +7,7 @@ _Dernière mise à jour_: 28 Décembre 2023
 
 Cher(e) aventurier(ère) intrépide,
 
-Avant de plonger tête baissée dans le chaos ludique qui vous attend dans Tanelorn, voici notre version épique de la Politique de Confidentialité :
+Avant de plonger tête baissée dans le chaos ludique qui vous attend chez Tanelorn, voici notre version simplifiée de la Politique de Confidentialité :
 
 ## Article 1 : Des données ? Connais pas !
 
