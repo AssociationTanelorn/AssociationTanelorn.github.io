@@ -88,3 +88,20 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.custom-link {
+    color: #4299e1; /* Default color */
+    text-decoration: underline;
+}
+
+.custom-link:hover {
+    color: #38b2ac; /* Hover color */
+}
+
+.dark .custom-link {
+    color: #cbd5e0; /* Dark mode color */
+}
+
+.dark .custom-link:hover {
+    color: #a0aec0; /* Dark mode hover color */
+}
