@@ -5,7 +5,6 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import { Icon } from "astro-icon/components";
 
 const metadata = {
   title: 'Association',
@@ -20,6 +19,7 @@ const metadata = {
       { variant:"primary", text: 'Nous rejoindre', href: '#join', icon: 'tabler:user-plus' },
       { text: 'Plus d\'info', href: '#domains' }
       ]}
+    image={{ src: '~/assets/images/m9b8.jpg', alt: 'Association Tanelorn' }}
   />
 
   <Features2
@@ -29,36 +29,36 @@ const metadata = {
     items={[
       {
         title: 'Jeux de rôle',
-        description: 'A principalement lieu les samedis soirs. Mieux vaut discuter sur Discord ou le Forum pour créer ou intégrer une table.',
+        description: "A lieu principalement les samedis soirs.",
         icon: 'tabler:masks-theater',
       },
       {
-        title: 'Jeux de société',
+        title: 'Jeux de plateau',
         description:
-          'A lieu les vendredis soirs et les samedis.',
+          "A lieu les vendredis soirs et les samedis (toute la journée).",
         icon: 'tabler:meeple',
       },
       {
         title: 'Jeux de figurines',
-        description: `A lieu les mardis, samedis et parfois les dimanches. Warhammer 40K et Age of Sigmar, Le Trône de fer, Seigneur des Anneaux, et bien d'autres !`,
+        description: `A lieu les mardis, samedis et parfois les dimanches.`,
         icon: 'tabler:swords',
       },
       {
         title: 'Wargames',
         description:
-          'A surtout lieu les samedis, et parfois ',
+          'A surtout lieu les samedis, et parfois les vendredis soirs.',
         icon: 'tabler:tank',
       },
       {
         title: 'Evènements publics',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
+          'Nous mettons en place ou participons plusieurs fois par an à des évènements ouverts au public.',
         icon: 'tabler:speakerphone',
       },
       {
         title: 'Tournois',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
+          'Nous organisons fréquemment des tounois, principalement de jeux de figurines, mais aussi de jeux de plateau.',
         icon: 'tabler:tournament',
       }
     ]}
@@ -81,42 +81,42 @@ const metadata = {
       {
         title: '🎲 A quoi jouons-nous ?',
         description:
-          'Il n\'est pas possible de dormir au LED, donc il faudra vous loger en dehors. Il y a quelques hôtels à prix raisonnables à proximité, comme le <a class="font-semibold custom-link" href="https://thionville.premiereclasse.com/fr-fr/">Première Classe</a>, le <a class="font-semibold custom-link" href="https://tulip-inn-thionville-residence.goldentulip.com/fr-fr/">Tulip Inn</a>, ou encore <a class="font-semibold custom-link" href="https://hdpthionville.com/">l\'Hôtel du Parc</a> ou le <a class="font-semibold custom-link" href="https://www.bestwestern.fr/fr/hotel-Thionville-Best-Western-Plus-Thionville-Centre-93938?sob=A42">Best Western Plus</a> un peu plus loin.',
+          'Toutes les formes de jeux sont acceptées, mais nous faisons principalement des <b>jeux de plateau</b>, des <b>jeux de figurines</b> (Warhammer & Co), des <b>jeux de rôles</b> et des <b>wargames</b>.',
       },
       {
-        title: "Comment sont organisées les parties ?",
+        title: "📅 Comment sont organisées les parties ?",
         description:
-          "Si vous venez en train, le plus simple serait de nous contacter afin que nous organisions pour vous récupérer et vous déposer en voiture (le LED est à quelques minutes). Sinon, le trajet peut aussi se faire à pied en longeant la Moselle, ce qui n'a rien de désagréable (comptez 25 minutes).",
+          "Les parties sont majoritairement auto-organisées, c'est à dire que soit vous venez à l'improviste et vous proposez des parties, ou vous vous greffez à des parties qui se lancent, soit vous faites ça en amont, en postant un message sur notre forum ou sur discord (les liens se trouvent en haut à droite de cette page).",
       },
       {
-        title: "Qui peut rejoindre l'association ?",
+        title: "👤 Qui peut rejoindre l'association ?",
         description:
-          "Les lieux ouvrent à 08h le matin et ferment autour de 01h le soir, à l'exception du dimanche qui se termine à 17h30. Nous avons de la place donc pas de problème pour installer des gros jeux ou laisser des tables en place d'un jour à l'autre.",
+          "Vous êtes bien sûr toutes et tous les bienvenus, mais les mineurs de moins de 16 ans doivent être accompagnés par un adulte.",
       },
       {
-        title: 'Combien est-ce que ça coûte ?',
+        title: '💰 Combien est-ce que ça coûte ?',
         description:
-          "Le détail des menus pour les repas du midi et soir seront communiqués en amont (et peuvent être adaptés, nous restons flexibles). Si vous avez des allergies, n'hésitez pas à nous le signaler par avant ou sur place.",
+          "Vous pouvez venir quelques fois sans souci, et après ça, vous devez vous acquitter d'une cotisation de <b>10€</b> par an.",
       },
       {
-        title: 'Peut-on manger sur place ?',
+        title: '🍲 Peut-on manger sur place ?',
         description:
-          "Le prix est de 15€ par repas (30€ par jour), et vous donne aussi accès au petit-déjeuner et aux boissons et accompagnements qui seront à disposition pour l'ensemble de l'évènement, incluant apéritif, biscuit, bonbons, bière, vin, café, thé, sodas, etc.",
+          "Plusieurs options sont possibles, soit vous ramenez directement votre repas, soit vous allez chercher/manger dehors, soit vous commandez (plusieurs restaurants livrent directement le LED). Il y a aussi généralement des petits déjeuners partagés par les membres du club.",
       },
       {
-        title: 'Peut-on boire sur place ?',
+        title: '🍹 Peut-on boire sur place ?',
         description:
-          "Nous acceptons les paiments en amont par Paypal ou virement bancaire, et sur place en liquide ou par carte bancaire.",
+          "L'eau et le café sont gratuits; pour le reste, il faudra faire l'acquisition d'une carte - n'hésitez pas à demander sur place.",
       },
       {
-        title: "Est-ce qu'il y a un accès handicapé ?",
+        title: "♿ Est-ce qu'il y a un accès handicapé ?",
         description:
-          "Tout est fourni sur place, à l'exception des jeux (mais bon, ça on sait que vous y penserez :-) ).",
+          "Le LED est accessible aux personnes en situation de handicap.",
       },
       {
-        title: 'Peut-on venir en transport en commun ?',
+        title: '🚄 Peut-on venir en train ?',
         description:
-          "Vous pouvez nous contacter par e-mail (association.tanelorn@gmail.com), par message privé sur la page Facebook de Tanelorn ou même directement sur le discord du club (voir les boutons en haut à droite de cette page).",
+          "Si vous arrivez par la gare de Thionville, vous pouvez regagner le club en une petite demi-heure à pied, en longeant la Moselle, mais vous pouvez aussi le faire savoir - il y a souvent des volontaires pour passer récupérer les membres à la gare.",
       },
     ]}
   />
@@ -130,13 +130,13 @@ const metadata = {
       {
         title: 'Étape 1 : <span class="font-medium">Se renseigner</span>',
         description:
-          'Vous pouvez réserver votre place dès maintenant en remplissant le formulaire accessible en <a class="font-semibold custom-link" href="' + "" + '">cliquant ici</a> (ou via l\'un des boutons "S\'inscrire" de cette page).',
+          'Le plus simple est de vérifier sur une de nos plateformes (voir en haut à droite de cette page pour les liens) pour être sûr que le club sera bien ouvert le jour J.',
         icon: 'tabler:user-plus',
       },
       {
         title: 'Étape 2 (optionnelle) : <span class="font-medium">Trouver une partie</em>',
         description:
-          'Il ne vous reste plus qu\'à proposer ou vous inscrire à des parties en utilisant le planificateur <a class="font-semibold custom-link" href="https://docs.google.com/spreadsheets/d/1r6AoiYxyVhg_5QRp7aK1-r3sJCWwc6id74_SfKx33V0/edit#gid=164993677">accessible ici</a>.',
+          "Il est aussi possible de proposer ou de s'intégrer à une partie avant de venir - cela vous permet d'être sûr d'avoir des partenaires de jeu sans avoir à attendre.",
         icon: 'tabler:calendar-event',
       },
       {
