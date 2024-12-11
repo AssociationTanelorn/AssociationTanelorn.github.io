@@ -13,7 +13,7 @@ import ImgGallery from '~/components/widgets/Gallery.jsx';
 import Headline from '~/components/blog/Headline.astro';
 
 const metadata = {
-  title: 'Assemblée des Grands Stratèges 2024',
+  title: 'Assemblée des Grands Stratèges 2025',
   ignoreTitleTemplate: true,
 };
 const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
@@ -34,12 +34,12 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
     image={{ src: '~/assets/images/v3-no-bg.png', alt: 'Assemblée des grands stratèges' }}
   >
     <Fragment slot="title">
-      Assemblée des Grands Stratèges 2024
+      Assemblée des Grands Stratèges 2025
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Troisième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 08 au dimanche 12 mai 2024</span>, au LED de Thionville.
+        Troisième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 07 au dimanche 11 mai 2025</span>, au LED de Thionville.
       </span>
     </Fragment>
   </Hero>
@@ -57,7 +57,7 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
       {
         title: 'Cinq jours épiques',
         description:
-          'Les festivités commencent le mercredi 8 Mai à 9h et se terminent le dimanche 12 Mai à 17h30, avec une fermeture les soirs autour d\'1h du matin.',
+          'Les festivités commencent le mercredi 7 Mai à 9h et se terminent le dimanche 11 Mai à 17h30, avec une fermeture les soirs autour d\'1h du matin.',
         icon: 'tabler:calendar-week',
       },
       {
@@ -67,9 +67,9 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
         icon: 'tabler:building-factory-2',
       },
       {
-        title: 'Formule Tout Inclus',
+        title: 'Les formules',
         description:
-          'Nous proposons une formule comprenant petit déjeuner, repas du midi et du soir pour 30€ / jour, incluant les boissons, le bar et les gâteaux et autres grignotages (ou 15€ si un seul repas).',
+          'Nos formules à la journée pour accéder à l\'évènement : <br />&nbsp;- 10€ : boissons à volonté<br />&nbsp;- 20€ : 1 repas + boissons à volonté<br />&nbsp;- 40€ : 2 repas + petit déjeuner + boissons à volonté',
         icon: 'tabler:cash',
       },
       {
@@ -77,6 +77,12 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
         description:
           'On reprend ce qui a le mieux marché (barbecue, plancha, cookeo, salades...) et on y rajoute 1 ou 2 Food trucks, le tout accompagné de la <a class="font-semibold hover:underline" href="http://brasseriederulles.be">bière artisanale Rulles</a> en pression (Triple et Pils).',
         icon: 'tabler:grill',
+      },
+      {
+        title: 'Concerts !',
+        description:
+          'Nouveau 2025, durant les apéros, concert gratuit en plein air (si le temps le permet).',
+        icon: 'tabler:music',
       },
       {
         title: 'Des jeux à votre image',
@@ -170,6 +176,11 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
           "Le prix est de 15€ par repas (30€ par jour), et vous donne aussi accès au petit-déjeuner et aux boissons et accompagnements qui seront à disposition pour l'ensemble de l'évènement, incluant apéritif, biscuit, bonbons, bière, vin, café, thé, sodas, etc.",
       },
       {
+        title: 'Et si je ne veux pas de repas ?',
+        description:
+          "L'accès à l'évènement est de 10€/jour, cela vous donne accès aux boissons et accompagnements qui seront à disposition pour l'ensemble de l'évènement, incluant apéritif, biscuit, bonbons, bière, vin, café, thé, sodas, etc.",
+      },
+      {
         title: 'Comment règle-t-on ?',
         description:
           "Nous acceptons les paiments en amont par Paypal ou virement bancaire, et sur place en liquide ou par carte bancaire.",
@@ -187,7 +198,7 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
     ]}
   />
 
-  <Headline title="Quelques tables de l'édition 2023" />
+  <Headline title="Quelques tables de l'édition 2024" />
   <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
 
   <CallToAction
