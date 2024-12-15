@@ -1,0 +1,43 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import SubscriptionForm from '~/components/widgets/SubscriptionForm.jsx';
+import Headline from '~/components/blog/Headline.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'Inscription Grands Stratèges 2025',
+  ignoreTitleTemplate: true,
+};
+---
+<Layout metadata={metadata}>
+  <Headline>Page d'inscription aux Grands Stratèges 2025</Headline>
+  <SubscriptionForm client:load />
+  <FAQs
+    title="Questions fréquentes"
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Comment sont gérés les repas ?',
+        description:
+          "Le détail des menus pour les repas du midi et soir seront communiqués en amont (et peuvent être adaptés, nous restons flexibles). Si vous avez des allergies, n'hésitez pas à nous le signaler par avant ou sur place.",
+      },
+      {
+        title: 'Combien est-ce que ça coûte ?',
+        description:
+          "Nous proposons 3 formules : accès uniquement (10€/jour), 1 repas (20€/jour) ou 2 repas (40€/jour). Les formules vous donnent l'accès aux salles, au petit-déjeuner et aux boissons et accompagnements qui seront à disposition pour l'ensemble de l'évènement, incluant apéritif, biscuit, bonbons, bière, vin, café, thé, sodas, etc.",
+      },
+      {
+        title: 'Comment règle-t-on ?',
+        description:
+          "Nous acceptons les paiments en amont par Paypal ou virement bancaire (veuillez nous contacter directement pour les coordonées), et sur place en liquide ou par carte bancaire.",
+      },
+      {
+        title: 'Que faut-il ramener ?',
+        description:
+          "Tout est fourni sur place, à l'exception des jeux (mais bon, ça on sait que vous y penserez :-) ).",
+      },
+    ]}
+  />
+
+</Layout>

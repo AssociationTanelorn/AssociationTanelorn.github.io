@@ -28,7 +28,7 @@ export const headerData = {
       links: [
         {
           text: 'Grands Stratèges',
-          href: getPermalink('/events/grands-strateges'),
+          href: getPermalink('/events/grands-strateges/edition-2025'),
         },
         {
           text: 'Warmistice (à venir)',
