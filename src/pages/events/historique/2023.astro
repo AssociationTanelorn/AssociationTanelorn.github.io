@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import ImgGallery from '~/components/widgets/Gallery.jsx';
+import gallery from '~/config/gallery/gallery2023';
+import Headline from '~/components/blog/Headline.astro';
+
+const metadata = {
+  title: 'Assemblée des Grands Stratèges 2023',
+  ignoreTitleTemplate: true,
+};
+---
+
+
+<Layout metadata={metadata}>
+  <Hero
+    title="Assemblée des Grands Stratèges 2023"
+    subtitle="En 2023, nous avons pu accueillir durant 4 jours la deuxième convention des grands stratèges. L'évènement, pour cette seconde édition a gagné en taille et en qualité"
+
+  />
+  <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
+</Layout>

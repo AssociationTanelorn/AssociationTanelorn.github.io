@@ -39,7 +39,7 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Troisième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 07 au dimanche 11 mai 2025</span>, au LED de Thionville.
+        Quatrième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 07 au dimanche 11 mai 2025</span>, au LED de Thionville.
       </span>
     </Fragment>
   </Hero>
@@ -75,7 +75,7 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
       {
         title: 'Expérience culinaire renouvelée',
         description:
-          'On reprend ce qui a le mieux marché (barbecue, plancha, cookeo, salades...) et on y rajoute 1 ou 2 Food trucks, le tout accompagné de la <a class="font-semibold hover:underline" href="http://brasseriederulles.be">bière artisanale Rulles</a> en pression (Triple et Pils).',
+          'On reprend ce qui a le mieux marché (barbecue, plancha, cookeo, salades...) et on y rajoute 1 ou 2 Food trucks, le tout accompagné de la bière brassée localement par la <a class="font-semibold hover:underline" href="https://www.brasserielavallee.com/" target="_blank">Brasserie de la Vallée</a>',
         icon: 'tabler:grill',
       },
       {
@@ -200,6 +200,19 @@ const grandsStrategesLink = 'https://forms.gle/EPyiCzkPd7edJZS88';
 
   <Headline title="Quelques tables de l'édition 2024" />
   <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
+  
+  <Headline title="Revoir les anciennes éditions" />
+    <CallToAction
+      actions={[
+        {
+          variant: 'primary',
+          text: "2023",
+          href: '/events/historique/2023',
+          target: '_blank',
+          icon: 'tabler:arrow-big-right-lines',
+        },
+      ]}
+    >
 
   <CallToAction
     actions={[
