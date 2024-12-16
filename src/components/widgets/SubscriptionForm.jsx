@@ -5,7 +5,7 @@ function SubscriptionForm() {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState('');
 	const [displayContent, setDisplayContent] = useState(false);
-	const [selectedOptions, setSelectedOptions] = useState(Array(6).fill(null)); // One for each row
+	const [selectedOptions, setSelectedOptions] = useState(Array(5).fill(null)); // One for each row
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [commentary, setCommentary] = useState('');
@@ -107,6 +107,7 @@ function SubscriptionForm() {
 				boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
 				marginLeft: 'auto',
 				marginRight: 'auto',
+				marginBottom: '30px',
 				maxWidth: '72rem'
 			}}
 			className='rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6'
@@ -265,7 +266,6 @@ function SubscriptionForm() {
 							10 €
 						</th>
 						<th style={{ border: '1px solid #ccc', padding: '5px' }}>Pas présent ce jour</th>
-						<th style={{ border: '1px solid #ccc', padding: '5px' }}>Je ne sais pas encore</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -280,7 +280,7 @@ function SubscriptionForm() {
 							>
 							{day}
 							</td>
-							{Array(6)
+							{Array(5)
 							.fill(null)
 							.map((_, colIndex) => (
 								<td

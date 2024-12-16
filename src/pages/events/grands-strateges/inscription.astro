@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import SubscriptionForm from '~/components/widgets/SubscriptionForm.jsx';
+import Note2 from '~/components/widgets/Note2.astro';
 import Headline from '~/components/blog/Headline.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 
@@ -12,6 +13,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <Headline>Page d'inscription aux Grands Stratèges 2025</Headline>
   <SubscriptionForm client:load />
+  <Note2 />
   <FAQs
     title="Questions fréquentes"
     tagline="FAQs"
