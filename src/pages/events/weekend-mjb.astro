@@ -1,0 +1,25 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: 'Weekend MJB - Décembre 2025',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Weekend MJB
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Cette page est en cours de construction, vous aurez bientôt ici une présentation de l'évènement "Weekend MJB" à venir (Décembre 2025).
+      </span>
+    </Fragment>
+  </Hero>
+</Layout>

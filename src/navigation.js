@@ -27,28 +27,20 @@ export const headerData = {
       text: 'Les évènements',
       links: [
         {
-          text: 'Grands Stratèges',
+          text: 'Grands Stratèges (05/2025)',
           href: getPermalink('/events/grands-strateges/edition-2025'),
         },
         {
-          text: 'Warmistice (à venir)',
-          //href: getPermalink('/services'),
+          text: 'Weekend MJB (12/2025)',
+          href: getPermalink('/events/weekend-mjb'),
         },
         {
-          text: 'Le Grand Secret (JdR) (à venir)',
-          //href: getPermalink('/pricing'),
+          text: 'Warmistice (01/2026)',
+          href: getPermalink('/events/warmistice'),
         },
         {
-          text: 'Convention Tanelorn (à venir)',
-          //href: getPermalink('/contact'),
-        },
-        {
-          text: 'Le conclave (à venir)',
-          //href: getPermalink('/terms'),
-        },
-        {
-          text: 'Tournois internes (à venir)',
-          //href: getPermalink('/about'),
+          text: 'Tournois internes',
+          href: getPermalink('/events/tournois-internes'),
         }
       ],
     },

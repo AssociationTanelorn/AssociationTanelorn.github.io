@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Warmistice - Janvier 2026',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Warmistice
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Cette page est en cours de construction, vous aurez bientôt ici une présentation de l'évènement "Warmistice" à venir (Janvier 2026).
+      </span>
+    </Fragment>
+  </Hero>
+</Layout>

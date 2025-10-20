@@ -1,0 +1,25 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: 'Tournois Internes',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero>
+    <Fragment slot="title">
+      Tournois Internes
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Cette page est en cours de construction, vous aurez bientôt ici un résumé des différents tournois de jeux de figurines, jeux de société et autre (Bloodbowl) que nous organisons tout au long de l'année.
+      </span>
+    </Fragment>
+  </Hero>
+</Layout>
