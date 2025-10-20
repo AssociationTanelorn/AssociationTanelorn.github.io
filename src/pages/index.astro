@@ -1,129 +1,146 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
-import ImgGallery from '~/components/widgets/Gallery.jsx';
-  import gallery from '~/config/gallery/gallery';
-import Headline from '~/components/blog/Headline.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
-  title: 'Assemblée des Grands Stratèges 2025',
-  ignoreTitleTemplate: true,
+  title: 'Association',
 };
-const grandsStrategesLink = '/events/grands-strateges/inscription';
 ---
 
 <Layout metadata={metadata}>
   <Hero
+    title="Tanelorn"
+    subtitle="Association Thionvilloise de Joueuses et Joueurs depuis 1986."
     actions={[
-      {
-        variant: 'primary',
-        text: 'S\'inscrire',
-        href: grandsStrategesLink,
-        target: '_blank',
-        icon: 'tabler:user-plus',
-      },
-      { text: 'Plus d\'info', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/v3-no-bg.png', alt: 'Assemblée des grands stratèges' }}
-  >
-    <Fragment slot="title">
-      Assemblée des Grands Stratèges 2025
-    </Fragment>
+      { variant:"primary", text: 'Nous rejoindre', href: '#join', icon: 'tabler:user-plus' },
+      { text: 'Plus d\'info', href: '#domains' }
+      ]}
+    image={{ src: '~/assets/images/m9b8.jpg', alt: 'Association Tanelorn' }}
+  />
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Quatrième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 07 au dimanche 11 mai 2025</span>, au LED de Thionville.
-      </span>
-    </Fragment>
-  </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  <Note />
-
-  <!-- Features Widget *************** -->
-
-  <Features
-    id="features"
-    title="La Convention en Résumé"
+  <Features2
+    id="domains"
+    title="Nos domaines d'activités"
+    columns={3}
     items={[
       {
-        title: 'Cinq jours épiques',
-        description:
-          'Les festivités commencent le mercredi 07 Mai à 9h et se terminent le dimanche 11 Mai à 17h30, avec une fermeture les soirs autour d\'1h du matin.',
-        icon: 'tabler:calendar-week',
+        title: 'Jeux de rôle',
+        description: "A lieu principalement les samedis soirs.",
+        icon: 'tabler:masks-theater',
       },
       {
-        title: 'Dans un lieu d\'exception',
+        title: 'Jeux de plateau',
         description:
-          'La convention aura lieu dans le bâtiment du <a class="font-semibold custom-link" href="https://www.thionville.fr/led">LED de Thionville</a>, dans la salle de concert flambant neuve, avec un bar-cuisine directement intégré à celle-ci !',
-        icon: 'tabler:building-factory-2',
-      },
-      {
-        title: 'Les formules',
-        description:
-          'Nos formules à la journée pour accéder à l\'évènement : <br />&nbsp;- 10€ : boissons à volonté<br />&nbsp;- 20€ : 1 repas + boissons à volonté<br />&nbsp;- 40€ : 2 repas + petit déjeuner + boissons à volonté',
-        icon: 'tabler:cash',
-      },
-      {
-        title: 'Expérience culinaire renouvelée',
-        description:
-          'On reprend ce qui a le mieux marché (barbecue, plancha, cookeo, salades...) et on y rajoute 1 ou 2 Food trucks, le tout accompagné de la bière brassée localement par la <a class="font-semibold hover:underline" href="https://www.brasserielavallee.com/" target="_blank">Brasserie de la Vallée</a>',
-        icon: 'tabler:grill',
-      },
-      {
-        title: 'Concerts !',
-        description:
-          'Nouveau 2025, durant les apéros, concert gratuit en plein air (si le temps le permet).',
-        icon: 'tabler:music',
-      },
-      {
-        title: 'Des jeux à votre image',
-        description:
-          'Petits, grands, courts, longs, en solo ou à plusieurs, ici on ne fait pas de discrimination, vous êtes libres de jouer à ce que vous voulez (et on a les tables si vous souhaitez sortir du monster game !)',
+          "A lieu les vendredis soirs et les samedis (toute la journée).",
         icon: 'tabler:meeple',
       },
       {
-        title: 'Une contrée hospitalière',
+        title: 'Jeux de figurines',
+        description: `A lieu les mardis, samedis et parfois les dimanches.`,
+        icon: 'tabler:swords',
+      },
+      {
+        title: 'Wargames',
         description:
-          'A proximité du LED, vous trouverez plusieurs hotels à prix raisonnables comme le <a class="font-semibold custom-link" href="https://thionville.premiereclasse.com/fr-fr/">Première Classe</a>, le <a class="font-semibold custom-link" href="https://tulip-inn-thionville-residence.goldentulip.com/fr-fr/">Tulip Inn</a>, ou encore <a class="font-semibold custom-link" href="https://hdpthionville.com/">l\'Hôtel du Parc</a> ou le <a class="font-semibold custom-link" href="https://www.bestwestern.fr/fr/hotel-Thionville-Best-Western-Plus-Thionville-Centre-93938?sob=A42">Best Western Plus</a> un peu plus loin.',
-        icon: 'tabler:bed',
+          'A surtout lieu les samedis, et parfois les vendredis soirs.',
+        icon: 'tabler:tank',
+      },
+      {
+        title: 'Evènements publics',
+        description:
+          'Nous mettons en place ou participons plusieurs fois par an à des évènements ouverts au public.',
+        icon: 'tabler:speakerphone',
+      },
+      {
+        title: 'Tournois',
+        description:
+          'Nous organisons fréquemment des tounois, principalement de jeux de figurines, mais aussi de jeux de plateau.',
+        icon: 'tabler:tournament',
+      }
+    ]}
+  />
+  <FAQs
+    title="Questions fréquentes"
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: "🚩 Où jouons-nous ?",
+        description:
+          'Au LED, un ancien bâtiment massif de la sidérurgie allemande remis au goût du jour pour la culture. L\'adresse est le <b>1 Chemin du Leidt, 57100 Thionville</b> - il s\'agit du grand bâtiment blanc, gris et orange, entouré d\'un parking gratuit (voici le <a class="font-semibold custom-link" href="https://www.google.com/maps/place/LED+Thionville/@49.3419631,6.1546247,16z/data=!4m5!3m4!1s0x0:0xa11fa9ed35d7603c!8m2!3d49.3419759!4d6.1542186">lien Google Maps</a>).',
+      },
+      {
+        title: '🕑 Quand jouons-nous ?',
+        description:
+          "Nous ouvrons nos portes chaque <b>samedi</b> (principalement le premier du mois), dès le matin - autour de 8h-9h; et jusqu'au soir, et parfois les <b>vendredis soirs</b> (pour le jeu de plateau) et les <b>mardis soirs</b> (pour la figurine).",
+      },
+      {
+        title: '🎲 A quoi jouons-nous ?',
+        description:
+          'Toutes les formes de jeux sont acceptées, mais nous faisons principalement des <b>jeux de plateau</b>, des <b>jeux de figurines</b> (Warhammer & Co), des <b>jeux de rôles</b> et des <b>wargames</b>.',
+      },
+      {
+        title: "📅 Comment sont organisées les parties ?",
+        description:
+          "Les parties sont majoritairement auto-organisées, c'est à dire que soit vous venez à l'improviste et vous proposez des parties, ou vous vous greffez à des parties qui se lancent, soit vous faites ça en amont, en postant un message sur notre forum ou sur discord (les liens se trouvent en haut à droite de cette page).",
+      },
+      {
+        title: "👤 Qui peut rejoindre l'association ?",
+        description:
+          "Vous êtes bien sûr toutes et tous les bienvenus, mais les mineurs de moins de 16 ans doivent être accompagnés par un adulte.",
+      },
+      {
+        title: '💰 Combien est-ce que ça coûte ?',
+        description:
+          "Vous pouvez venir quelques fois sans souci, et après ça, vous devez vous acquitter d'une cotisation de <b>10€</b> par an.",
+      },
+      {
+        title: '🍲 Peut-on manger sur place ?',
+        description:
+          "Plusieurs options sont possibles, soit vous ramenez directement votre repas, soit vous allez chercher/manger dehors, soit vous commandez (plusieurs restaurants livrent directement le LED). Il y a aussi généralement des petits déjeuners partagés par les membres du club.",
+      },
+      {
+        title: '🍹 Peut-on boire sur place ?',
+        description:
+          "L'eau et le café sont gratuits; pour le reste, il faudra faire l'acquisition d'une carte - n'hésitez pas à demander sur place.",
+      },
+      {
+        title: "♿ Est-ce qu'il y a un accès handicapé ?",
+        description:
+          "Le LED est accessible aux personnes en situation de handicap.",
+      },
+      {
+        title: '🚄 Peut-on venir en train ?',
+        description:
+          "Si vous arrivez par la gare de Thionville, vous pouvez regagner le club en une petite demi-heure à pied, en longeant la Moselle, mais vous pouvez aussi le faire savoir - il y a souvent des volontaires pour passer récupérer les membres à la gare.",
       },
     ]}
   />
 
-  <!-- Steps Widget ****************** -->
+  <!-- Content Widget **************** -->
 
   <Steps
-    title="Maintenant, vous vous demandez sûrement comment nous rejoindre ?"
+    title="Si vous vous demandez comment nous rejoindre..."
+    id="join"
     items={[
       {
-        title: 'Étape 1 : <span class="font-medium">S\'inscrire</span>',
+        title: 'Étape 1 : <span class="font-medium">Se renseigner</span>',
         description:
-          'Vous pouvez réserver votre place dès maintenant en remplissant le formulaire accessible en <a class="font-semibold custom-link" href="' + grandsStrategesLink + '">cliquant ici</a> (ou via l\'un des boutons "S\'inscrire" de cette page).',
+          'Le plus simple est de vérifier sur une de nos plateformes (voir en haut à droite de cette page pour les liens) pour être sûr que le club sera bien ouvert le jour J.',
         icon: 'tabler:user-plus',
       },
       {
-        title: 'Étape 2 : <span class="font-medium">Confirmer sa réservation</em>',
+        title: 'Étape 2 (optionnelle) : <span class="font-medium">Trouver une partie</em>',
         description:
-          "Afin de pouvoir commander les repas, nous vous demanderons une confirmation de votre présence quelques temps avant la convention (par email).",
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Étape 3 : <span class="font-medium">Planifier des parties</span>',
-        description:
-          'Il ne vous reste plus qu\'à proposer ou vous inscrire à des parties en utilisant le planificateur <a class="font-semibold custom-link" href="https://docs.google.com/spreadsheets/d/1zaa_Mg8MtfMv-7ldoTc7yw63Ly7d9S8yghNEjAImaA4/edit?usp=sharing" target="_blank">accessible ici</a> (pour le wargame et le plateau) ou <a target="_blank" href="https://docs.google.com/spreadsheets/d/1aiZ5JPcxM5A3ipgx5YwieMHVjBEUOLUaZm0W9czSTe4/htmlview" class="font-semibold custom-link" >ici</a> (pour la figurine).',
+          "Il est aussi possible de proposer ou de s'intégrer à une partie avant de venir - cela vous permet d'être sûr d'avoir des partenaires de jeu sans avoir à attendre.",
         icon: 'tabler:calendar-event',
       },
       {
-        title: 'Venir le Jour J !',
+        title: 'Venir nous voir !',
         icon: 'tabler:plane-departure',
       },
     ]}
@@ -133,90 +150,12 @@ const grandsStrategesLink = '/events/grands-strateges/inscription';
     }}
   />
 
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Questions fréquentes"
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'Où a lieu la convention ?',
-        description:
-          'Au LED, un ancien bâtiment massif de la sidérurgie allemande remis au goût du jour pour la culture. L\'adresse est le 1 Chemin du Leidt, 57100 Thionville - il s\'agit du grand bâtiment blanc, gris et orange, entouré d\'un parking gratuit (voici le <a class="font-semibold custom-link" href="https://www.google.com/maps/place/LED+Thionville/@49.3419631,6.1546247,16z/data=!4m5!3m4!1s0x0:0xa11fa9ed35d7603c!8m2!3d49.3419759!4d6.1542186">lien Google Maps</a>).',
-      },
-      {
-        title: 'Comment venir (en voiture) ?',
-        description:
-          "La route conduisant au LED longe la voie ferrée et est directement accessible depuis la sortie 39 Beauregard de l'A31 (en entrant dans la rue, la boulangerie Ange sera sur votre gauche). Vous pouvez vous garer gratuitement au LED.",
-      },
-      {
-        title: 'Comment se loger ?',
-        description:
-          'Il n\'est pas possible de dormir au LED, donc il faudra vous loger en dehors. Il y a quelques hôtels à prix raisonnables à proximité, comme le <a class="font-semibold custom-link" href="https://thionville.premiereclasse.com/fr-fr/">Première Classe</a>, le <a class="font-semibold custom-link" href="https://tulip-inn-thionville-residence.goldentulip.com/fr-fr/">Tulip Inn</a>, ou encore <a class="font-semibold custom-link" href="https://hdpthionville.com/">l\'Hôtel du Parc</a> ou le <a class="font-semibold custom-link" href="https://www.bestwestern.fr/fr/hotel-Thionville-Best-Western-Plus-Thionville-Centre-93938?sob=A42">Best Western Plus</a> un peu plus loin.',
-      },
-      {
-        title: "Comment venir (en train) ?",
-        description:
-          "Si vous venez en train, le plus simple serait de nous contacter afin que nous organisions pour vous récupérer et vous déposer en voiture (le LED est à quelques minutes). Sinon, le trajet peut aussi se faire à pied en longeant la Moselle, ce qui n'a rien de désagréable (comptez 25 minutes).",
-      },
-      {
-        title: 'Comment sont organisées les journées ?',
-        description:
-          "Les lieux ouvrent à 08h le matin et ferment autour de 01h le soir, à l'exception du dimanche qui se termine à 17h30. Nous avons de la place donc pas de problème pour installer des gros jeux ou laisser des tables en place d'un jour à l'autre.",
-      },
-      {
-        title: 'Comment sont gérés les repas ?',
-        description:
-          "Le détail des menus pour les repas du midi et soir seront communiqués en amont (et peuvent être adaptés, nous restons flexibles). Si vous avez des allergies, n'hésitez pas à nous le signaler par avant ou sur place.",
-      },
-      {
-        title: 'Combien est-ce que ça coûte ?',
-        description:
-          "Le prix est de 20€ par repas (40€ par jour), et vous donne aussi accès au petit-déjeuner et aux boissons et accompagnements qui seront à disposition pour l'ensemble de l'évènement, incluant apéritif, biscuit, bonbons, bière, vin, café, thé, sodas, etc.",
-      },
-      {
-        title: 'Et si je ne veux pas de repas ?',
-        description:
-          "L'accès à l'évènement est de 10€/jour, cela vous donne accès aux boissons et accompagnements qui seront à disposition pour l'ensemble de l'évènement, incluant apéritif, biscuit, bonbons, bière, vin, café, thé, sodas, etc.",
-      },
-      {
-        title: 'Comment règle-t-on ?',
-        description:
-          "Nous acceptons les paiments en amont par Paypal ou virement bancaire, et sur place en liquide ou par carte bancaire.",
-      },
-      {
-        title: 'Que faut-il ramener ?',
-        description:
-          "Tout est fourni sur place, à l'exception des jeux (mais bon, ça on sait que vous y penserez :-) ).",
-      },
-      {
-        title: 'Comment contacter les organisateurs ?',
-        description:
-          "Vous pouvez nous contacter par e-mail (association.tanelorn@gmail.com), par message privé sur la page Facebook de Tanelorn ou même directement sur le discord du club (voir les boutons en haut à droite de cette page).",
-      },
-    ]}
-  />
-
-  <Headline title="Quelques tables de l'édition 2024" />
-  <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
-
   <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: "S'inscrire",
-        href: grandsStrategesLink,
-        target: '_blank',
-        icon: 'tabler:user-plus',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Alors, convaincu ?
-    </Fragment>
-    <Fragment slot="subtitle">
-      Et même si vous ne l'êtes pas, n'hésitez pas à nous dire pourquoi, promis on ne mord pas :-)
-    </Fragment>
-  </CallToAction>
+    actions={[{
+      variant: "primary",
+      text: 'Nous contacter',
+      href: '/contact',
+    }]}
+    title="Vous souhaitez prendre contact ou poser une question ?"
+  />
 </Layout>
