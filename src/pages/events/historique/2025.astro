@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import ImgGallery from '~/components/widgets/Gallery.jsx';
+import gallery2025 from '~/config/gallery/gallery2025';
+import Headline from '~/components/blog/Headline.astro';
+
+const metadata = {
+  title: 'Assemblée des Grands Stratèges 2025',
+  ignoreTitleTemplate: true,
+};
+---
+
+
+<Layout metadata={metadata}>
+  <Hero
+    title="Assemblée des Grands Stratèges 2025"
+    subtitle="En 2025, l'évènement grandit, les foods trucks font leur apparition et le succès est au rendez-vous"
+
+  />
+  <ImgGallery client:only="react" photos={gallery2025.photos} layout={gallery2025.layout} />
+</Layout>

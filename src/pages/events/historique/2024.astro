@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import ImgGallery from '~/components/widgets/Gallery.jsx';
+import gallery from '~/config/gallery/gallery2024';
+import Headline from '~/components/blog/Headline.astro';
+
+const metadata = {
+  title: 'Assemblée des Grands Stratèges 2024',
+  ignoreTitleTemplate: true,
+};
+---
+
+
+<Layout metadata={metadata}>
+  <Hero
+    title="Assemblée des Grands Stratèges 2024"
+
+  />
+  <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
+</Layout>

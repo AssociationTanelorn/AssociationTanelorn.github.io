@@ -27,20 +27,12 @@ export const headerData = {
       text: 'Les évènements',
       links: [
         {
-          text: 'Grands Stratèges (05/2025)',
-          href: getPermalink('/events/grands-strateges/edition-2025'),
-        },
-        {
-          text: 'Weekend MJB (12/2025)',
-          href: getPermalink('/events/weekend-mjb'),
+          text: 'Grands Stratèges (05/2026)',
+          href: getPermalink('/events/grands-strateges/edition-2026'),
         },
         {
           text: 'Warmistice (01/2026)',
           href: getPermalink('/events/warmistice'),
-        },
-        {
-          text: 'Tournois internes',
-          href: getPermalink('/events/tournois-internes'),
         }
       ],
     },

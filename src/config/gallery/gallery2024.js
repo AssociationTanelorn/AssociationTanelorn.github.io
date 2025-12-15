@@ -1,5 +1,5 @@
 // load and parse the json file images.json
-import photos from './photos.json';
+import photos2024 from './photos2024.json';
 
 // Image gallery configuration on the galley page
 
@@ -11,7 +11,7 @@ const gallery = {
   layout: 'masonry',
 
   // Collection of images to display in the gallery
-  photos: photos,
+  photos: photos2024,
 };
 
 export default gallery;

@@ -9,7 +9,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import ImgGallery from '~/components/widgets/Gallery.jsx';
-  import gallery from '~/config/gallery/gallery';
+import gallery2025 from '~/config/gallery/gallery2025';
 import Headline from '~/components/blog/Headline.astro';
 
 const metadata = {
@@ -31,7 +31,7 @@ const grandsStrategesLink = '/events/grands-strateges/inscription';
       },
       { text: 'Plus d\'info', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/v3-no-bg.png', alt: 'Assemblée des grands stratèges' }}
+    image={{ src: '~/assets/images/Tanelorn.jpg', alt: 'Association Tanelorn' }}
   >
     <Fragment slot="title">
       Assemblée des Grands Stratèges 2025
@@ -39,7 +39,7 @@ const grandsStrategesLink = '/events/grands-strateges/inscription';
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Quatrième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 07 au dimanche 11 mai 2025</span>, au LED de Thionville.
+        Quatrième édition de la convention de wargames et jeux de plateau du Grand Est, du <span class="font-semibold">mercredi 13 au dimanche 17 mai 2026</span>, au LED de Thionville.
       </span>
     </Fragment>
   </Hero>
@@ -57,43 +57,37 @@ const grandsStrategesLink = '/events/grands-strateges/inscription';
       {
         title: 'Cinq jours épiques',
         description:
-          'Les festivités commencent le mercredi 7 Mai à 9h et se terminent le dimanche 11 Mai à 17h30, avec une fermeture les soirs autour d\'1h du matin.',
+          'Les festivités commencent le mercredi 13 Mai à 9h et se terminent le dimanche 17 Mai à 17h30, avec une fermeture les soirs autour d\'1h du matin. Possibilité de venir installer les jeux dès le mardi 12 à 19h.',
         icon: 'tabler:calendar-week',
       },
       {
         title: 'Dans un lieu d\'exception',
         description:
-          'La convention aura lieu dans le bâtiment du <a class="font-semibold hover:underline" href="https://www.thionville.fr/led">LED de Thionville</a>, dans la salle de concert flambant neuve, avec un bar-cuisine directement intégré à celle-ci !',
+          'La convention aura lieu dans le bâtiment du <a class="font-semibold hover:underline custom-link" href="https://www.thionville.fr/led">LED de Thionville</a>, dans la salle de concert !',
         icon: 'tabler:building-factory-2',
       },
       {
         title: 'Les formules',
         description:
-          'Nos formules à la journée pour accéder à l\'évènement : <br />&nbsp;- 10€ : boissons à volonté<br />&nbsp;- 20€ : 1 repas + boissons à volonté<br />&nbsp;- 40€ : 2 repas + petit déjeuner + boissons à volonté',
+          'Nos formules à la journée pour accéder à l\'évènement : <br />&nbsp;- 25€ : 1 repas + boissons à volonté<br />&nbsp;- 40€ : 2 repas + petit déjeuner + boissons à volonté',
         icon: 'tabler:cash',
       },
       {
         title: 'Expérience culinaire renouvelée',
         description:
-          'On reprend ce qui a le mieux marché (barbecue, plancha, cookeo, salades...) et on y rajoute 1 ou 2 Food trucks, le tout accompagné de la bière brassée localement par la <a class="font-semibold hover:underline" href="https://www.brasserielavallee.com/" target="_blank">Brasserie de la Vallée</a>',
+          'On reprend ce qui a le mieux marché (barbecue, plancha, cookeo, salades...) et on y rajoute des Food trucks, le tout accompagné de la bière brassée avec amour par la <a class="font-semibold hover:underline custom-link" href="https://brasseriederulles.be/)" target="_blank">Brasserie artisanale de Rulles</a>',
         icon: 'tabler:grill',
-      },
-      {
-        title: 'Concerts !',
-        description:
-          'Nouveau 2025, durant les apéros, concert gratuit en plein air (si le temps le permet).',
-        icon: 'tabler:music',
       },
       {
         title: 'Des jeux à votre image',
         description:
-          'Petits, grands, courts, longs, en solo ou à plusieurs, ici on ne fait pas de discrimination, vous êtes libres de jouer à ce que vous voulez (et on a les tables si vous souhaitez sortir du monster game !)',
+          'Fans de wargame historique ou de jeux de plateaux épiques ? Vous êtes libres de jouer à ce que vous voulez (et on a les tables si vous souhaitez sortir du monster game !)',
         icon: 'tabler:meeple',
       },
       {
         title: 'Une contrée hospitalière',
         description:
-          'A proximité du LED, vous trouverez plusieurs hotels à prix raisonnables comme le <a class="font-semibold hover:underline" href="https://thionville.premiereclasse.com/fr-fr/">Première Classe</a>, le <a class="font-semibold hover:underline" href="https://tulip-inn-thionville-residence.goldentulip.com/fr-fr/">Tulip Inn</a>, ou encore <a class="font-semibold hover:underline" href="https://hdpthionville.com/">l\'Hôtel du Parc</a> ou le <a class="font-semibold hover:underline" href="https://www.bestwestern.fr/fr/hotel-Thionville-Best-Western-Plus-Thionville-Centre-93938?sob=A42">Best Western Plus</a> un peu plus loin.',
+          'A proximité du LED, vous trouverez plusieurs hotels à prix raisonnables comme le <a class="font-semibold hover:underline custom-link" href="https://thionville.premiereclasse.com/fr-fr/">Première Classe</a>, le <a class="font-semibold hover:underline custom-link" href="https://tulip-inn-thionville-residence.goldentulip.com/fr-fr/">Tulip Inn</a>, ou encore <a class="font-semibold hover:underline custom-link" href="https://hdpthionville.com/">l\'Hôtel du Parc</a> ou le <a class="font-semibold hover:underline custom-link" href="https://www.bestwestern.fr/fr/hotel-Thionville-Best-Western-Plus-Thionville-Centre-93938?sob=A42">Best Western Plus</a> un peu plus loin.',
         icon: 'tabler:bed',
       },
     ]}
@@ -198,12 +192,26 @@ const grandsStrategesLink = '/events/grands-strateges/inscription';
     ]}
   />
 
-  <Headline title="Quelques tables de l'édition 2024" />
-  <ImgGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />
+  <Headline title="Quelques tables de l'édition 2025" />
+  <ImgGallery client:only="react" photos={gallery2025.photos} layout={gallery2025.layout} />
   
   <Headline title="Revoir les anciennes éditions" />
     <CallToAction
       actions={[
+        {
+          variant: 'primary',
+          text: "2025",
+          href: '/events/historique/2025',
+          target: '_blank',
+          icon: 'tabler:arrow-big-right-lines',
+        },
+        {
+          variant: 'primary',
+          text: "2024",
+          href: '/events/historique/2024',
+          target: '_blank',
+          icon: 'tabler:arrow-big-right-lines',
+        },
         {
           variant: 'primary',
           text: "2023",
