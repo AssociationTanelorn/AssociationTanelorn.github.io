@@ -15,7 +15,7 @@ metadata:
   openGraph:
     site_name: Tanelorn
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/default.jpg'
         width: 1200
         height: 628
     type: website
