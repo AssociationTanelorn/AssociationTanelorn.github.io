@@ -3,8 +3,8 @@
     "key": 0,
     "alt": "Grand Stratèges 2025",
     "src": "/assets/images/gs/2025/GS2025-01.jpg",
-    "width": 752,
-    "height": 1020
+    "width": 2048,
+    "height": 1536
   },
   {
     "key": 1,
@@ -17,8 +17,8 @@
     "key": 2,
     "alt": "Grand Stratèges 2025",
     "src": "/assets/images/gs/2025/GS2025-03.jpg",
-    "width": 2000,
-    "height": 1500
+    "width": 2048,
+    "height": 1536
   },
   {
     "key": 3,
@@ -98,18 +98,11 @@
     "height": 1536
   },
   {
-    "key": 13,
+    "key": 14,
     "alt": "Grand Stratèges 2025",
     "src": "/assets/images/gs/2025/GS2025-15.jpg",
-    "width": 2048,
-    "height": 1536
-  },
-  {
-    "key": 13,
-    "alt": "Grand Stratèges 2025",
-    "src": "/assets/images/gs/2025/GS2025-16.jpg",
-    "width": 2048,
-    "height": 1536
+    "width": 2000,
+    "height": 1500
   }
 ]
   
